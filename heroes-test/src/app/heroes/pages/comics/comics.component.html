@@ -1,0 +1,29 @@
+<section id="comic-list">
+  <div class="title">
+    <h1>a bit of good comics</h1>
+  </div>
+  <div class="content-sect">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 box-sect">
+          <div class="box">
+            <div class="row comic-row" *ngFor="let comic of comics; let i = index">
+              <div class="col-2 comic-info">
+                {{ i + 1 }}
+              </div>
+              <div class="col-2">
+                <img class="comic-img" src="{{comic.thumbnail.path}}/standard_large.{{comic.thumbnail.extension}}">
+              </div>
+              <div class="col-6 comic-info">
+                {{ comic.title }}
+              </div>
+              <div class="col-2 comic-info">
+                <button routerLink="/comic-detail/{{comic.id}}" class="custom-btn">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

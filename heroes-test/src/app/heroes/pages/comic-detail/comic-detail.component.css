@@ -1,0 +1,64 @@
+#comic-detail {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-align: center;
+}
+
+.comic-header {
+    padding-top: 2rem;
+}
+
+.top-home {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-custom {
+    background-color: brown;
+    color: white;
+    padding: 1.5rem;
+    border: none;
+}
+
+.comic-name {
+    padding-top: 2rem;
+}
+
+.comic-name-text{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.comic-box {
+    padding-bottom: 2rem;
+}
+
+.info-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 4rem;
+}
+
+.info-row {
+    background-color: rgb(114, 114, 114);
+    border: 1px solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.comic-comics {
+    max-height: 18rem;
+    width: 100%;
+    overflow-y: auto
+}
+
+.comics {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.comic-img {
+    padding-top: 4rem;
+}

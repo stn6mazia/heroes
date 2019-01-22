@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Hero } from '../mocules/hero';
 import { tap } from 'rxjs/operators'
+import { Comic } from '../mocules/comic';
 
 @Injectable({
   providedIn: 'root'
 })
-export class HeroesService {
-  baseURL = 'https://gateway.marvel.com/v1/public/characters';
+export class ComicsService {
+  baseURL = 'https://gateway.marvel.com/v1/public/comics';
   ts = '1';
   apiKey = '320e53eb73d72a66555193e9d981c89f';
   hash = 'c63a4767870f229b5bfbfead4d6e80e4';
@@ -18,8 +18,8 @@ export class HeroesService {
 
   constructor(private http: HttpClient) { }
 
-  list() {
-    return this.http.get<Hero[]>(this.API)
+  listComics() {
+    return this.http.get<Comic[]>(this.API)
       .pipe(
         tap(console.log)
       )

@@ -1,0 +1,25 @@
+<section id="comic-detail">
+  <div class="comic-content" *ngFor="let comic of comics">
+    <div class="container">
+      <div class="comic-name">
+        <h1 class="comic-name-text">{{ comic.title }}</h1>
+      </div>
+      <div class="row">
+        <div class="col-4 comic-img">
+            <img class="comic-img" src="{{comic.thumbnail.path}}/portrait_incredible.{{comic.thumbnail.extension}}">
+        </div>
+        <div class="col-8">
+          <div class="comic-box">
+            <div class="info-header">Characters</div>
+            <div class="comic-info">
+              <div class="row info-row"  *ngFor="let character of comic.characters.items">
+                <div class="col-1 comics"><i class="fas fa-user-astronaut"></i></div>
+                <div class="col-11 comics">{{ character.name }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

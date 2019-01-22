@@ -2,9 +2,10 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HeroesListComponent } from './components';
+import { HeroesListComponent, HeaderComponent } from './components';
 import { HeroesComponent } from './heroes.component';
-import { HeroDetailComponent, PageNotFoundComponent } from './pages';
+import { HeroDetailComponent, PageNotFoundComponent, ComicsComponent } from './pages';
+import { ComicDetailComponent } from './pages/comic-detail/comic-detail.component';
 
 const appRoutes: Routes = [
   {
@@ -12,8 +13,16 @@ const appRoutes: Routes = [
     component: HeroesListComponent,
   },
   {
+    path: 'comics-list',
+    component: ComicsComponent
+  },
+  {
     path: 'hero-detail/:id',
     component: HeroDetailComponent
+  },
+  {
+    path: 'comic-detail/:id',
+    component: ComicDetailComponent
   },
   {
     path: 'home',
@@ -44,7 +53,10 @@ const appRoutes: Routes = [
     HeroesComponent,
     PageNotFoundComponent,
     HeroesListComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    ComicsComponent,
+    HeaderComponent,
+    ComicDetailComponent
   ],
   exports: [
     HeroesComponent

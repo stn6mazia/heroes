@@ -1,0 +1,15 @@
+#header-sect {
+    text-align: center;
+}
+
+.button-row {
+    padding-top: 3rem;
+}
+
+.custom-btn {
+    background-color: rgb(160, 13, 13);
+    border: none;
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+}

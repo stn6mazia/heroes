@@ -1,0 +1,49 @@
+#comic-list {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.title {
+    text-align: center;
+    padding-top: 3rem;
+    font-weight: 700;
+}
+
+.header-sect {
+    padding-top: 5rem;
+}
+
+.box-sect {
+    text-align: center;
+}
+
+.box {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+.comic-row {
+    background-color: rgb(93, 93, 93);
+    border-radius: 15px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.comic-img {
+    padding: 1rem;
+}
+
+.comic-info {
+    padding-top: 3rem;
+    font-size: 2.5rem;
+    color: rgb(201, 201, 201);
+}
+
+.custom-btn {
+    background-color: brown;
+    color: white;
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+}

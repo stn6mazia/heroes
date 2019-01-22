@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Hero } from '../../hero';
 import { HeroesService } from '../../services';
+import { Hero } from '../../mocules';
 
 @Component({
   selector: 'app-hero-detail',
@@ -24,11 +24,6 @@ export class HeroDetailComponent implements OnInit {
     this.justId = this.current.substring(13);
 
     this.getHero();
-  }
-
-  getList() {
-    this.heroService.list()
-      .subscribe(hero => this.heroes = hero.data.results.id)
   }
 
   getHero() {
