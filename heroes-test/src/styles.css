@@ -1,0 +1,8 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+}

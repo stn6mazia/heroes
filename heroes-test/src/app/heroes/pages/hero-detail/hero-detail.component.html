@@ -1,0 +1,36 @@
+<section id="hero-detail">
+  <div class="hero-header">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <a class="top-home" routerLink="/heroes-list" >
+            <i class="fas fa-home"></i> Back to Home <i class="fas fa-home"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-content" *ngFor="let character of heroes">
+    <div class="container">
+      <div class="hero-name">
+        <h1 class="hero-name-text">{{ character.name }}</h1>
+      </div>
+      <div class="row">
+        <div class="col-4 hero-img">
+            <img class="hero-img" src="{{character.thumbnail.path}}/portrait_incredible.{{character.thumbnail.extension}}">
+        </div>
+        <div class="col-8">
+          <div class="hero-box">
+            <div class="info-header">Comics</div>
+            <div class="hero-info">
+              <div class="row info-row"  *ngFor="let comic of character.comics.items">
+                <div class="col-1 comics"><i class="fas fa-book"></i></div>
+                <div class="col-11 comics">{{ comic.name }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

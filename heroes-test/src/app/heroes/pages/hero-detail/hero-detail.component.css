@@ -1,0 +1,64 @@
+#hero-detail {
+    background-color: rgb(41, 41, 41);
+    color: white;
+    text-align: center;
+}
+
+.hero-header {
+    padding-top: 2rem;
+}
+
+.top-home {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-custom {
+    background-color: brown;
+    color: white;
+    padding: 1.5rem;
+    border: none;
+}
+
+.hero-name {
+    padding-top: 2rem;
+}
+
+.hero-name-text{
+    font-size: 5rem;
+    font-weight: 700;
+}
+
+.hero-box {
+    padding-bottom: 2rem;
+}
+
+.info-header {
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding-bottom: 4rem;
+}
+
+.info-row {
+    background-color: rgb(114, 114, 114);
+    border: 1px solid black;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.hero-comics {
+    max-height: 18rem;
+    width: 100%;
+    overflow-y: auto
+}
+
+.comics {
+    text-align: right;
+    font-size: 1.5rem;
+}
+
+.hero-img {
+    padding-top: 4rem;
+}

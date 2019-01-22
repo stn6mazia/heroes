@@ -1,0 +1,29 @@
+<section id="hero-list">
+  <div class="title">
+    <h1>a bit of good heroes</h1>
+  </div>
+  <div class="content-sect">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 box-sect">
+          <div class="box">
+            <div class="row hero-row" *ngFor="let hero of heroes; let i = index">
+              <div class="col-2 hero-info">
+                {{ i + 1 }}
+              </div>
+              <div class="col-2">
+                <img class="hero-img" src="{{hero.thumbnail.path}}/standard_large.{{hero.thumbnail.extension}}">
+              </div>
+              <div class="col-6 hero-info">
+                {{ hero.name }}
+              </div>
+              <div class="col-2 hero-info">
+                <button routerLink="/hero-detail/{{hero.id}}" class="custom-btn">More Info</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
